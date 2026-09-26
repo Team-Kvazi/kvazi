@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Квазибуплон — коэффициент студента</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">Квазибуплон</a>
+      <nav class="nav">
+        <a href="#about" class="nav__link">О термине</a>
+        <a href="#factors" class="nav__link">Составляющие</a>
+        <a href="#calculator" class="nav__link">Калькулятор</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero__inner">
+      <p class="hero__badge">Новый взгляд на успех студента</p>
+      <h1 class="hero__title">Что такое <span class="accent">Квазибуплон</span>?</h1>
+      <p class="hero__subtitle">
+        Квазибуплон — это специальный коэффициент, который объединяет ключевые факторы студенческой жизни:
+        успеваемость, отношение преподавателей и искреннюю заинтересованность в выбранной сфере.
+      </p>
+      <div class="hero__actions">
+        <a href="#calculator" class="btn btn--primary">Рассчитать свой</a>
+        <a href="#about" class="btn btn--ghost">Узнать больше</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section__title">О термине</h2>
+      <p class="section__text">
+        Термин <strong>«Квазибуплон»</strong> родился из желания измерить то, что обычно сложно выразить в цифрах.
+        Это не просто средний балл и не просто рейтинг. Это комплексная характеристика, показывающая,
+        насколько студент действительно «в своей тарелке»: учится ли он ради оценки или ради дела.
+      </p>
+      <p class="section__text">
+        Название подчёркивает «квази»-природу коэффициента: он похож на точный измеритель, но на самом деле
+        отражает живую, меняющуюся динамику студенческого пути. Чем выше квазибуплон — тем гармоничнее сочетаются
+        знания, признание и увлечённость.
+      </p>
+    </div>
+  </section>
+
+  <section id="factors" class="section factors">
+    <div class="container">
+      <h2 class="section__title">Из чего складывается</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card__icon">🎓</div>
+          <h3 class="card__title">Успеваемость</h3>
+          <p class="card__text">
+            Оценки, экзамены, курсовые — фундамент, на котором строится академическая репутация студента.
+          </p>
+        </article>
+        <article class="card">
+          <div class="card__icon">🤝</div>
+          <h3 class="card__title">Отношение преподавателей</h3>
+          <p class="card__text">
+            Признание, отзывы и поддержка наставников — важный сигнал того, что студента замечают и ценят.
+          </p>
+        </article>
+        <article class="card">
+          <div class="card__icon">🔥</div>
+          <h3 class="card__title">Заинтересованность</h3>
+          <p class="card__text">
+            Искренний интерес к выбранной сфере, желание развиваться и выходить за рамки учебной программы.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="calculator" class="section calculator">
+    <div class="container calculator__inner">
+      <h2 class="section__title">Калькулятор квазибуплона</h2>
+      <p class="section__text">
+        Оцените каждый фактор по шкале от 0 до 100 — и узнайте свой коэффициент.
+      </p>
+      <form id="calcForm" class="calc-form">
+        <label class="calc-form__label">
+          <span>Успеваемость (0–100)</span>
+          <input type="number" id="academic" min="0" max="100" value="70" required />
+        </label>
+        <label class="calc-form__label">
+          <span>Отношение преподавателей (0–100)</span>
+          <input type="number" id="teachers" min="0" max="100" value="70" required />
+        </label>
+        <label class="calc-form__label">
+          <span>Заинтересованность (0–100)</span>
+          <input type="number" id="interest" min="0" max="100" value="70" required />
+        </label>
+        <button type="submit" class="btn btn--primary">Рассчитать</button>
+      </form>
+      <div id="result" class="result" hidden>
+        <p class="result__value">Ваш квазибуплон: <span id="resultValue">—</span></p>
+        <p id="resultComment" class="result__comment"></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2025 Квазибуплон. Популяризируем термин вместе.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
